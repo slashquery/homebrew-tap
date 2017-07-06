@@ -38,6 +38,11 @@ class Slashquery < Formula
         :revision => "b3941358c7b7b73f5ce4a7402827c83b5d52cb14"
   end
 
+  go_resource "github.com/slashquery-plugins/requestid" do
+    url "https://github.com/slashquery-plugins/requestid",
+        :revision => "67a7a0bffa613f82630dca1afe70532428bff548"
+  end
+
   def install
     ENV["GOPATH"] = buildpath
     (buildpath/"src/github.com/slashquery/slashquery").install buildpath.children
