@@ -1,3 +1,5 @@
+require "language/go"
+
 class Slashquery < Formula
   desc "API Gateway"
   homepage "https://slashquery.com"
