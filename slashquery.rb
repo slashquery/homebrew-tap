@@ -28,9 +28,14 @@ class Slashquery < Formula
         :revision => "431db125cc1892866a2b306ba4cc8d1d4f5d577d"
   end
 
-  go_resource " dothub.com/miekg/dns" do
+  go_resource " github.com/miekg/dns" do
     url "https://github.com/miekg/dns",
         :revision => "e46719b2fef404d2e531c0dd9055b1c95ff01e2e"
+  end
+
+  go_resource " github.com/slashquery/resolver" do
+    url "https://github.com/slashquery/resolver",
+        :revision => "b3941358c7b7b73f5ce4a7402827c83b5d52cb14"
   end
 
   def install
