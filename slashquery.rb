@@ -39,7 +39,7 @@ class Slashquery < Formula
   end
 
   go_resource "github.com/slashquery-plugins/requestid" do
-    url "https://github.com/slashquery-plugins/requestid",
+    url "https://github.com/slashquery-plugins/requestid.git",
         :revision => "67a7a0bffa613f82630dca1afe70532428bff548"
   end
 
