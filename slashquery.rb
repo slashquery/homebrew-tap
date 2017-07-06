@@ -16,6 +16,21 @@ class Slashquery < Formula
 
   depends_on "go" => :build
 
+  go_resource "github.com/go-yaml/yaml" do
+    url "https://github.com/go-yaml/yaml.git",
+        :revision => "cd8b52f8269e0feb286dfeef29f8fe4d5b397e0b"
+  end
+
+  go_resource "github.com/nbari/violetear" do
+    url "https://github.com/nbari/violetear.git",
+        :revision => "431db125cc1892866a2b306ba4cc8d1d4f5d577d"
+  end
+
+  go_resource " dothub.com/miekg/dns" do
+    url "https://github.com/miekg/dns",
+        :revision => "e46719b2fef404d2e531c0dd9055b1c95ff01e2e"
+  end
+
   def install
     ENV["GOPATH"] = buildpath
     (buildpath/"src/github.com/slashquery/slashquery").install buildpath.children
