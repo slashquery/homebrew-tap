@@ -39,8 +39,8 @@ class Slashquery < Formula
   end
 
   go_resource "github.com/golang/tools/tree/master/cmd/goimports" do
-    url "https://github.com/golang/tools/tree/master/cmd/goimports",
-        :revision => "7d47e840ac8ec63c4a5cd5c900156cad5e6b6a63"
+      url "https://github.com/golang/tools.git",
+        :revision => "72ed06fbe2cf37c56ab4877b06571d2e7620627b"
   end
 
   def install
