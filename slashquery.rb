@@ -38,6 +38,11 @@ class Slashquery < Formula
         :revision => "b3941358c7b7b73f5ce4a7402827c83b5d52cb14"
   end
 
+  go_resource "github.com/golang/tools/tree/master/cmd/goimports" do
+    url "https://github.com/golang/tools/tree/master/cmd/goimports",
+        :revision => "7d47e840ac8ec63c4a5cd5c900156cad5e6b6a63"
+  end
+
   def install
     ENV["GOPATH"] = buildpath
     (buildpath/"src/github.com/slashquery/slashquery").install buildpath.children
