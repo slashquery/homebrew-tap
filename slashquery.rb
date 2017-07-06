@@ -34,6 +34,7 @@ class Slashquery < Formula
   def install
     ENV["GOPATH"] = buildpath
     (buildpath/"src/github.com/slashquery/slashquery").install buildpath.children
+    Language::Go.stage_deps resources, buildpath/"src"
     cd "src/github.com/slashquery/slashquery" do
       system "make"
       bin.install "slashquery"
