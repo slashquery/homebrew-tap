@@ -48,7 +48,9 @@ class Slashquery < Formula
     (buildpath/"src/github.com/slashquery/slashquery").install buildpath.children
     Language::Go.stage_deps resources, buildpath/"src"
     cd "src/github.com/slashquery/slashquery" do
-      system "make"
+      ldflags = "-s -w -X main.version=#{version}"
+      system "go", "run", "genroutes.go", "-f", "testdata/default.yml"
+      system "go", "build", "-ldflags", ldflags, "-o" "#{bin}/slashquery", "cmd/slashquery/main.go"
       bin.install "slashquery"
     end
   end
