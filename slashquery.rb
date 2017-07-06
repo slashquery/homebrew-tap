@@ -56,7 +56,6 @@ class Slashquery < Formula
       ldflags = "-s -w -X main.version=#{version}"
       system "go", "run", "genroutes.go", "-f", "testdata/default.yml"
       system "go", "build", "-ldflags", ldflags, "-o", "#{bin}/slashquery", "cmd/slashquery/main.go"
-      bin.install "slashquery"
     end
   end
 
