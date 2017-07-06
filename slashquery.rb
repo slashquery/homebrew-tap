@@ -34,7 +34,7 @@ class Slashquery < Formula
   end
 
   go_resource "github.com/slashquery/resolver" do
-    url "https://github.com/slashquery/resolver.git"
+    url "https://github.com/slashquery/resolver.git",
         :revision => "b3941358c7b7b73f5ce4a7402827c83b5d52cb14"
   end
 
