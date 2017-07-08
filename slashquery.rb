@@ -4,8 +4,8 @@ class Slashquery < Formula
   desc "API Gateway"
   homepage "https://slashquery.com"
   url "https://github.com/slashquery/slashquery.git",
-      :tag => "0.1.1",
-      :revision => "1564c41610a6fb1725758f7f72400938ee9c9ab0"
+      :tag => "0.1.2",
+      :revision => "455362cc06edac362cdc021607b23f90434d1fa0"
 
   head "https://github.com/slashquery/slashquery.git"
 
